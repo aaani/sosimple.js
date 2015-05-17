@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>So Simple - If Else example</title>
+    <script src="../sosimple.js"></script>
+</head>
+<body>
+
+<script type="text/html" id="arithmetic_template">
+    <% switch(operation) { case '+': %>
+            <p>x+y=<%= (x+y) %></p>
+            <%break;%>
+        <% case '-': %>
+            <p>x-y=<%= (x-y) %></p>
+            <%break;%>
+        <%default:%>
+            <p>Unrecognised Operator</p>
+    <%}%>
+</script>
+<div id="arithmetic_expression"> </div>
+</body>
+</html>
+
+<script>
+    var template = document.getElementById("arithmetic_template").innerHTML;
+    var values = {
+        "x": 10,
+        "y": 15
+    };
+    values.operation = "+";
+    var rendered = renderSoSimple(template, values);
+    document.getElementById("arithmetic_expression").innerHTML = rendered;
+</script>

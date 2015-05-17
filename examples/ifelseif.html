@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>So Simple - If Else example</title>
+    <script src="../sosimple.js"></script>
+</head>
+<body>
+    <script type="text/html" id="what_to_wear_template">
+        <div>
+            <% if(weather == "hot"){ %>
+            <p>Wear <%=hotwear%></p>
+            <% } else if(weather == "cold") { %>
+            <p>Wear <%=coldwear%></p>
+            <% } else { %>
+            <p>Wear whatever you want</p>
+            <% } %>
+        </div>
+    </script>
+    <div id="what_to_wear"> </div>
+</body>
+</html>
+
+<script>
+    var template = document.getElementById("what_to_wear_template").innerHTML;
+    var rendered = renderSoSimple(template, {weather: "humid", hotwear: "light", coldwear: "dark"});
+    document.getElementById("what_to_wear").innerHTML = rendered;
+</script>

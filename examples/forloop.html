@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>So Simple - If Else example</title>
+    <script src="../sosimple.js"></script>
+</head>
+<body>
+
+<script type="text/html" id="jokes_template">
+    <% for(var i=0; i<value.length; i++) { %>
+    <p>Joke <%=(i+1)%>: <%= value[i].joke %></p>
+    <p>Tags: <%= value[i].categories.join(", ") %></p>
+    <% } %>
+</script>
+<div id="jokes"> </div>
+</body>
+</html>
+
+<script>
+    var template = document.getElementById("jokes_template").innerHTML;
+    var jokes = {
+        "value": [{
+            "id": 473,
+            "joke": "Chuck Norris can overflow your stack just by looking at it.",
+            "categories": ["nerdy", "code", "stack"]
+        }, {
+            "id": 497,
+            "joke": "If Chuck Norris writes code with bugs, the bugs fix themselves.",
+            "categories": ["bugs", "nerdy", "code"]
+        }, {
+            "id": 547,
+            "joke": "Product Owners never ask Chuck Norris for more features. They ask for mercy.",
+            "categories": ["product", "nerdy"]
+        }]
+    };
+    var rendered = renderSoSimple(template, jokes);
+    document.getElementById("jokes").innerHTML = rendered;
+</script>
