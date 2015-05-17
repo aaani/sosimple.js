@@ -15,7 +15,7 @@ var renderedHTMLString = renderSoSimple(templateString, modelJSON);
 
 ### Examples:
 
-- #### Inline blocks
+#### Inline blocks
 **HTML**
 ```HTML+ERB
 <body>
@@ -33,7 +33,7 @@ document.getElementById("result").innerHTML = rendered;
 ```
 
 
-- #### If else if ladder
+#### If else if ladder
 **HTML**
 ```HTML+ERB
 <body>
@@ -59,7 +59,7 @@ document.getElementById("what_to_wear").innerHTML = rendered;
 ```
 
 
-- #### For loop
+#### For loop
 **HTML**
 ```HTML+ERB
 <body>
@@ -95,7 +95,7 @@ document.getElementById("jokes").innerHTML = rendered;
 ```
 
 
-- #### Switch
+#### Switch
 **HTML**
 ```HTML+ERB
 <body>
