@@ -3,7 +3,7 @@
 
 **Tiny** because its size is 316 bytes (compressed) and 233 bytes (Compressed and zipped).
 
-**Superfast** because it's at least as fast as jresig templating engine. (performance tests coming soon...)
+**Superfast** because it's faster than jresig templating engine. [Performace tests](#perf)
 
 **Simple** because it extremely easy to use, and underlying code is very simple to understand.
 
@@ -125,3 +125,9 @@ var rendered = renderSoSimple(template, values);
 document.getElementById("arithmetic_expression").innerHTML = rendered;
 ```
 **Note**: In the Switch statement example, first case is inline with the control expression. Watch out for that because it's is a bit counter intuitive.
+
+### Performance <a name="perf"></a>
+### Performance comparison with jresig templating engine
+-[If Else](http://jsperf.com/ifelse-sosimple)
+-[For Loop](http://jsperf.com/forloop-sosimple)
+
