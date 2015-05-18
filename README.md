@@ -127,7 +127,7 @@ document.getElementById("arithmetic_expression").innerHTML = rendered;
 **Note**: In the Switch statement example, first case is inline with the control expression. Watch out for that because it's is a bit counter intuitive.
 
 ### Performance <a name="perf"></a>
-### Performance comparison with jresig templating engine
+#### Comparison with jresig templating engine
 - [If Else](http://jsperf.com/ifelse-sosimple)
 
 - [For Loop](http://jsperf.com/forloop-sosimple)
