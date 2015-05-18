@@ -128,6 +128,7 @@ document.getElementById("arithmetic_expression").innerHTML = rendered;
 
 ### Performance <a name="perf"></a>
 ### Performance comparison with jresig templating engine
--[If Else](http://jsperf.com/ifelse-sosimple)
--[For Loop](http://jsperf.com/forloop-sosimple)
+- [If Else](http://jsperf.com/ifelse-sosimple)
+
+- [For Loop](http://jsperf.com/forloop-sosimple)
 
