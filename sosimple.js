@@ -1,3 +1,7 @@
+/*
+ * renderSoSimple
+ * By Anirvana Mishra, http://www.anirvana.com
+ */
 function renderSoSimple(tpl, model){
     tpl = tpl.replace(/[\r\t\n]/g, " ");
     var re1 = /<%(?:=?)(?:\s*)(.*?)(?:\s*)%>/ig,aux;
